@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf6ec;
+}
+
+::selection {
+  background-color: #8dc63f;
+  color: #0b1f16;
+}
+
+.section-eyebrow {
+  font-family: var(--font-label);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-noise {
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(11, 31, 22, 0.08) 1px,
+      transparent 0
+    );
+  background-size: 22px 22px;
+}
+
+.wheat-divider {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #8dc63f 0,
+    #8dc63f 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  height: 3px;
+}
