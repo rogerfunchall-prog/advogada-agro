@@ -11,8 +11,8 @@ body {
 }
 
 ::selection {
-  background-color: #8dc63f;
-  color: #0b1f16;
+  background-color: #f2be22;
+  color: #111111;
 }
 
 .section-eyebrow {
@@ -30,7 +30,7 @@ body {
 .bg-noise {
   background-image: radial-gradient(
       circle at 1px 1px,
-      rgba(11, 31, 22, 0.08) 1px,
+      rgba(17, 17, 17, 0.08) 1px,
       transparent 0
     );
   background-size: 22px 22px;
@@ -39,8 +39,8 @@ body {
 .wheat-divider {
   background-image: repeating-linear-gradient(
     90deg,
-    #8dc63f 0,
-    #8dc63f 10px,
+    #f2be22 0,
+    #f2be22 10px,
     transparent 10px,
     transparent 20px
   );

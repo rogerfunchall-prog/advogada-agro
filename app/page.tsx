@@ -6,6 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Audience from "./components/Audience";
 import Process from "./components/Process";
+import Stats from "./components/Stats";
 import Social from "./components/Social";
 import FAQ from "./components/FAQ";
 import FinalCta from "./components/FinalCta";
@@ -24,6 +25,7 @@ export default function Home() {
         <Services />
         <Audience />
         <Process />
+        <Stats />
         <Social />
         <FAQ />
         <FinalCta />

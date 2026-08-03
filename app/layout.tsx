@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, Manrope } from "next/font/google";
+import { Fraunces, Poppins } from "next/font/google";
 import "./globals.css";
 import { site } from "./content";
 
@@ -10,16 +10,10 @@ const fraunces = Fraunces({
   variable: "--font-heading",
 });
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-body",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-  variable: "--font-label",
 });
 
 export const metadata: Metadata = {
@@ -97,7 +91,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${fraunces.variable} ${inter.variable} ${manrope.variable} font-body bg-cream text-ink antialiased`}
+        className={`${fraunces.variable} ${poppins.variable} font-body bg-cream text-ink antialiased`}
       >
         {children}
       </body>

@@ -14,10 +14,10 @@ export default function Services() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
             <Reveal>
-              <p className="section-eyebrow text-lime-dark mb-4">Catálogo completo</p>
+              <p className="section-eyebrow text-gold-dark mb-4">Catálogo completo</p>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="font-heading max-w-xl text-3xl md:text-[2.6rem] font-semibold leading-tight text-forest-deep text-balance">
+              <h2 className="font-heading max-w-xl text-3xl md:text-[2.6rem] font-semibold leading-tight text-ink text-balance">
                 Áreas de atuação em advocacia agro
               </h2>
             </Reveal>
@@ -38,21 +38,21 @@ export default function Services() {
                   onClick={() => setActive(i)}
                   className={`flex w-full items-center justify-between gap-4 rounded-2xl border px-6 py-4 text-left transition-all ${
                     active === i
-                      ? "border-lime bg-forest text-cream shadow-lg"
-                      : "border-forest/10 bg-white text-forest-deep hover:border-lime/50"
+                      ? "border-ink bg-ink text-white shadow-lg"
+                      : "border-ink/10 bg-white text-ink hover:border-gold"
                   }`}
                 >
                   <span className="flex items-center gap-4">
                     <span
                       className={`font-heading text-lg font-semibold ${
-                        active === i ? "text-lime" : "text-forest/30"
+                        active === i ? "text-gold" : "text-ink/30"
                       }`}
                     >
                       {cat.number}
                     </span>
                     <span className="font-label text-sm font-semibold">{cat.title}</span>
                   </span>
-                  <span className={`text-lg transition-transform ${active === i ? "rotate-90 text-lime" : "text-forest/30"}`}>
+                  <span className={`text-lg transition-transform ${active === i ? "rotate-90 text-gold" : "text-ink/30"}`}>
                     →
                   </span>
                 </button>
@@ -61,7 +61,7 @@ export default function Services() {
           </div>
 
           <Reveal delay={0.15} className="lg:sticky lg:top-28 lg:self-start">
-            <div className="min-h-[420px] rounded-3xl border border-forest/10 bg-forest-deep p-8 md:p-10 shadow-[0_20px_60px_rgba(11,31,22,0.15)]">
+            <div className="min-h-[420px] rounded-3xl bg-ink p-8 md:p-10 shadow-[0_20px_60px_rgba(17,17,17,0.25)]">
               <AnimatePresence mode="wait">
                 {active !== null && (
                   <motion.div
@@ -71,16 +71,16 @@ export default function Services() {
                     exit={{ opacity: 0, x: -16 }}
                     transition={{ duration: 0.35 }}
                   >
-                    <span className="font-heading text-6xl font-semibold text-lime/20">
+                    <span className="font-heading text-6xl font-semibold text-gold/20">
                       {serviceCatalog[active].number}
                     </span>
-                    <h3 className="mt-3 font-heading text-2xl font-semibold text-cream">
+                    <h3 className="mt-3 font-heading text-2xl font-semibold text-white">
                       {serviceCatalog[active].title}
                     </h3>
                     <ul className="mt-6 space-y-3.5">
                       {serviceCatalog[active].items.map((item) => (
-                        <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-cream/80">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />
+                        <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-white/75">
+                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                           {item}
                         </li>
                       ))}

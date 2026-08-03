@@ -8,30 +8,31 @@ const config: Config = {
         cream: {
           DEFAULT: "#FBF6EC",
           light: "#FFFDF9",
-          soft: "#F3ECDA",
+          soft: "#F2EDE0",
         },
+        // Kept only for the client's own logo mark / tiny brand touches
         forest: {
           DEFAULT: "#1F4A34",
           dark: "#123023",
           deep: "#0B1F16",
           light: "#2E6B49",
         },
-        lime: {
-          DEFAULT: "#8DC63F",
-          light: "#B6E06B",
-          dark: "#6BA22C",
-        },
         gold: {
-          DEFAULT: "#C6A15B",
-          light: "#DDC08A",
+          DEFAULT: "#F2BE22",
+          light: "#FFD966",
+          dark: "#D9A600",
         },
-        ink: "#16221A",
-        muted: "#5B6B60",
+        ink: {
+          DEFAULT: "#111111",
+          soft: "#1C1C1C",
+          light: "#2B2B2B",
+        },
+        muted: "#666666",
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "sans-serif"],
+        heading: ["var(--font-heading)", "serif"],
         body: ["var(--font-body)", "sans-serif"],
-        label: ["var(--font-label)", "sans-serif"],
+        label: ["var(--font-body)", "sans-serif"],
       },
       borderRadius: {
         blob: "63% 37% 54% 46% / 55% 48% 52% 45%",

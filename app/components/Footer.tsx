@@ -5,9 +5,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-forest-deep pt-20">
+    <footer className="bg-ink pt-20">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid gap-12 border-b border-cream/10 pb-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
+        <div className="grid gap-12 border-b border-white/10 pb-14 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
               <Image
@@ -17,25 +17,25 @@ export default function Footer() {
                 height={48}
                 className="rounded-full"
               />
-              <span className="font-heading text-lg font-semibold text-cream">
+              <span className="font-heading text-lg font-semibold text-white">
                 {site.brand}
               </span>
             </div>
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/60">
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">
               {site.metaDescription}
             </p>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 font-label text-sm font-semibold text-lime"
+              className="mt-5 inline-flex items-center gap-2 font-label text-sm font-semibold text-gold"
             >
               {INSTAGRAM_HANDLE}
             </a>
           </div>
 
           <div>
-            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-lime">
+            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-gold">
               Navegação
             </h4>
             <ul className="mt-5 space-y-3">
@@ -43,7 +43,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-sm text-cream/65 transition-colors hover:text-cream"
+                    className="text-sm text-white/60 transition-colors hover:text-white"
                   >
                     {item.label}
                   </a>
@@ -53,12 +53,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-lime">
+            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-gold">
               Áreas de atuação
             </h4>
             <ul className="mt-5 space-y-3">
               {serviceCatalog.slice(0, 5).map((s) => (
-                <li key={s.number} className="text-sm text-cream/65">
+                <li key={s.number} className="text-sm text-white/60">
                   {s.title}
                 </li>
               ))}
@@ -66,12 +66,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-lime">
+            <h4 className="font-label text-xs font-bold uppercase tracking-widest text-gold">
               Contato
             </h4>
-            <ul className="mt-5 space-y-3 text-sm text-cream/65">
+            <ul className="mt-5 space-y-3 text-sm text-white/60">
               <li>
-                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-cream transition-colors">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-white transition-colors">
                   {CONTACT_EMAIL}
                 </a>
               </li>
@@ -80,7 +80,7 @@ export default function Footer() {
                   href={whatsappLink("Olá, gostaria de uma consulta sobre regularização fundiária")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-cream transition-colors"
+                  className="hover:text-white transition-colors"
                 >
                   WhatsApp
                 </a>
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 py-8 text-xs text-cream/40 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 py-8 text-xs text-white/35 md:flex-row">
           <p>© {year} {site.brand}. Todos os direitos reservados.</p>
           <p>Direito Agrário &amp; Fundiário para o Agronegócio</p>
         </div>
