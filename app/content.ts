@@ -2,7 +2,7 @@
 // (pagina-direito-agrario-fundiario.md e servicos-advocacia-agro.docx)
 
 // TODO(cliente): substituir pelo número de WhatsApp real, formato 55DDDNUMERO (somente dígitos)
-export const WHATSAPP_NUMBER = "5500000000000";
+export const WHATSAPP_NUMBER = "5519993949391";
 export const INSTAGRAM_HANDLE = "@DraAdvAgro";
 export const INSTAGRAM_URL = "https://instagram.com/draadvagro";
 // TODO(cliente): substituir pelo e-mail real de contato
