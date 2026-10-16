@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     description: site.metaDescription,
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 800,
+        alt: "Magrin Advogados - Direito Agrário e Regularização Fundiária",
+      },
+    ],
   },
 };
 
