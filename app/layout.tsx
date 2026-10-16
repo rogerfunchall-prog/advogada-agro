@@ -16,6 +16,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://advogada-u19ogzg.verdent.app"),
   title: site.metaTitle,
   description: site.metaDescription,
   icons: {
