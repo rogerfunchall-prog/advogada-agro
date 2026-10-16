@@ -12,7 +12,7 @@ export default function FinalCta() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-ink-soft/90" />
+        <div className="absolute inset-0 bg-ink-soft/30" />
       </div>
 
       <div className="mx-auto max-w-3xl px-5 md:px-8 text-center">

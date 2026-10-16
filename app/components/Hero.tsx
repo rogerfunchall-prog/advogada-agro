@@ -19,8 +19,8 @@ export default function Hero() {
           priority
           className="object-cover animate-kenburns"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink-soft/90 via-ink/60 to-ink-soft/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-soft/65 via-transparent to-ink-soft/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink-soft/30 via-ink/20 to-ink-soft/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-soft/30 via-transparent to-ink-soft/10" />
       </div>
 
       {/* decorative brand blobs */}
