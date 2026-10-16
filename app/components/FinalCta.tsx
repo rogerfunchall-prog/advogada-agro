@@ -7,17 +7,17 @@ export default function FinalCta() {
     <section id="contato" className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/document-signing.jpg"
-          alt="Assinatura de contrato rural"
+          src="/images/final-cta-banner.png"
+          alt="Dra. Magrin em atendimento jurídico personalizado"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/88" />
+        <div className="absolute inset-0 bg-ink-soft/90" />
       </div>
 
       <div className="mx-auto max-w-3xl px-5 md:px-8 text-center">
         <Reveal>
-          <p className="section-eyebrow text-gold mb-5">Fale agora</p>
+          <p className="section-eyebrow text-brand mb-5">Fale agora</p>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="font-heading text-3xl md:text-5xl font-semibold leading-tight text-white text-balance">
@@ -33,13 +33,13 @@ export default function FinalCta() {
               href={whatsappLink(finalCta.whatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-pill bg-gold px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-ink shadow-[0_10px_30px_rgba(242,190,34,0.35)] transition-transform hover:-translate-y-0.5 hover:bg-gold-light"
+              className="inline-flex items-center gap-2 rounded-pill bg-brand px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-ink shadow-[0_10px_30px_rgba(242,190,34,0.35)] transition-transform hover:-translate-y-0.5 hover:bg-brand-light"
             >
               Falar no WhatsApp
             </a>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-flex items-center gap-2 rounded-pill border border-white/40 px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-white transition-colors hover:border-gold hover:text-gold"
+              className="inline-flex items-center gap-2 rounded-pill border border-white/40 px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-white transition-colors hover:border-brand hover:text-brand"
             >
               Solicitar consulta por e-mail
             </a>
