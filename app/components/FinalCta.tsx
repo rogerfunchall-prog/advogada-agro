@@ -33,13 +33,13 @@ export default function FinalCta() {
               href={whatsappLink(finalCta.whatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-pill bg-brand px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-ink shadow-[0_10px_30px_rgba(242,190,34,0.35)] transition-transform hover:-translate-y-0.5 hover:bg-brand-light"
+              className="inline-flex items-center gap-2 rounded-pill border-2 border-white bg-white/10 px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-white shadow-[0_10px_30px_rgba(0,0,0,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-white hover:text-ink"
             >
               Falar no WhatsApp
             </a>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-flex items-center gap-2 rounded-pill border border-white/40 px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-white transition-colors hover:border-brand hover:text-brand"
+              className="inline-flex items-center gap-2 rounded-pill border-2 border-white bg-white/10 px-8 py-4 font-label text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-ink"
             >
               Solicitar consulta por e-mail
             </a>
