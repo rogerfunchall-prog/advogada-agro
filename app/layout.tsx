@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Fraunces, Poppins } from "next/font/google";
+import { Outfit, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { site } from "./content";
 
-const fraunces = Fraunces({
+const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-heading",
 });
 
-const poppins = Poppins({
+const notoSans = Noto_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-body",
@@ -19,6 +18,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: site.metaTitle,
   description: site.metaDescription,
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: site.metaTitle,
     description: site.metaDescription,
@@ -91,7 +94,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${fraunces.variable} ${poppins.variable} font-body bg-cream text-ink antialiased`}
+        className={`${outfit.variable} ${notoSans.variable} font-body bg-cream text-ink antialiased`}
       >
         {children}
       </body>
